@@ -16,6 +16,13 @@
 
 </head>
 <style>
+    iframe{      
+        display: block;  /* iframes are inline by default */   
+        height: 100vh;  /* Set height to 100% of the viewport height */   
+        width: 100vw;  /* Set width to 100% of the viewport width */     
+        border: none; /* Remove default border */
+        background: lightyellow; /* Just for styling */
+    }    
 	.button {
 	  display: inline-block;
 	  padding: 10px 20px;
@@ -85,26 +92,37 @@
             <div class="row intro-text align-items-center justify-content-center">
                 <div class="col-md-10 text-center pt-5">
                     <h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Vardhan Raj Modi</strong></h1>
-                    <strong class="d-block text-white text-uppercase letter-spacing">"This is the Way!"</strong>
+                    <strong class="d-block text-white text-uppercase letter-spacing"> 
+                        “We are the first generation to feel the impact of climate change 
+                        and the last generation that can do something about it.” - Barack Obama
+                    </strong>
                 </div>
             </div>
         </div>
     </section> <!-- section -->
 
-    <!-- The rest of your HTML content is removed -->
-
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/vendor/popper.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/jquery.easing.1.3.js"></script>
-    <script src="js/vendor/jquery.stellar.min.js"></script>
-    <script src="js/vendor/jquery.waypoints.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- Google Map -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=false"></script>
-        <script src="js/google-map.js"></script> -->
+	<section class="site-section " id="section-resume">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+                        <h2>
+                            <strong>
+                                Indian city of Delhi has one of the worst Air Quality caused by anthropogenic emissions among various factors.
+                                Check out a web application to visualise Air Quality I developed through collaboration with my colleagues at The University of Leicester.
+                            </strong>
+                        </h2>                        
+                        <h2>
+                            <strong>
+                                Web application: Air Quality visualisation
+                            </strong>
+                        </h2>
+						<a href="https://cds.climate.copernicus.eu/#!/home">Source: Copernicus Climate Data Service(CDS)</a>                        
+					</div>
+				</div> 
+            </div>
+        </div>
+        <iframe src="https://aem33.shinyapps.io/EO_Project17/"></iframe>    
+    </section>   
 </body>
 </html>
